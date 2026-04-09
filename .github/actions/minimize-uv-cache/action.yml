@@ -1,0 +1,9 @@
+name: Minimize uv cache
+description: Minimize the uv cache to improve cache hit rates
+
+runs:
+  using: composite
+  steps:
+    - name: Minimize uv cache
+      shell: bash
+      run: uv cache prune --ci
