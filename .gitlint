@@ -1,0 +1,41 @@
+[general]
+# Enable debug mode
+debug = false
+
+# Ignore rules for merge commits
+ignore-merge-commits = true
+
+# Define the max line length for subject
+max-line-length = 88
+
+[title-max-length]
+line-length = 88
+
+[title-must-not-contain-word]
+# Word list used for the "title-must-not-contain-word" rule
+words = wip,WIP,work in progress
+
+[body-hard-tab]
+ignore = false
+
+[body-leading-blank]
+ignore = false
+
+[body-trailing-blank]
+ignore = false
+
+[body-min-length]
+min-length = 0
+
+[commit-is-fixup-commit]
+ignore = false
+
+[commit-type-enum]
+# Comma-separated list of allowed commit types
+types = feat,fix,docs,style,refactor,perf,test,ci,chore,revert
+
+[commit-type-case]
+case = lower
+
+[body-is-missing]
+ignore = true
